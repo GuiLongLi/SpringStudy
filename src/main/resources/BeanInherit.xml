@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--BeanPostProcessor 接口也被称为后置处理器，通过该接口可以自定义调用初始化前后执行的操作方法。-->
+<!--Spring Bean继承 : Bean 定义可以包含很多配置信息，包括构造函数参数、属性值和容器的一些具体信息，如初始化方法、销毁方法等。子 Bean 可以继承父 Bean 的配置数据，根据需要，子 Bean 可以重写值或添加其它值。。-->
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"

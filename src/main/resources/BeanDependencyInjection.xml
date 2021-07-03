@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Spring 依赖注入（Dependency Injection，DI）和控制反转含义相同，它们是从两个角度描述的同一个概念。使用依赖注入可以更轻松的管理和测试应用程序。-->
+<!--当某个 Java 实例需要另一个 Java 实例时，传统的方法是由调用者创建被调用者的实例（例如，使用 new 关键字获得被调用者实例），而使用 Spring 框架后，被调用者的实例不再由调用者创建，而是由 Spring 容器创建，这称为控制反转。-->
+<!--Spring 容器在创建被调用者的实例时，会自动将调用者需要的对象实例注入给调用者，调用者通过 Spring 容器获得被调用者实例，这称为依赖注入。-->
+<!--依赖注入主要有两种实现方式，分别是 setter 注入（又称设值注入）和构造函数注入。具体介绍如下。-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="init"
+       default-destroy-method="destroy">
+
+    <!--构造函数注入-->
+    <bean id="man" class="BeanDependencyInjection.Man" >
+       <constructor-arg value="构造函数注入" />
+       <constructor-arg value="12" type="int" />
+    </bean>
+    <bean id="person" class="BeanDependencyInjection.Person">
+        <constructor-arg ref="man" type="BeanDependencyInjection.Man" />
+    </bean>
+
+    <!--setter注入-->
+    <bean id="man2" class="BeanDependencyInjection.Man" >
+        <property name="name" value="setter注入" />
+        <property name="age" value="123" />
+    </bean>
+    <bean id="person2" class="BeanDependencyInjection.Person">
+        <property name="man" ref="man2" />
+    </bean>
+
+    <!--内部Bean注入-->
+    <bean id="person3" class="BeanDependencyInjection.Person">
+        <property name="man">
+            <bean class="BeanDependencyInjection.Man">
+                <property name="name" value="内部Bean注入" />
+                <property name="age" value="234" />
+            </bean>
+        </property>
+    </bean>
+</beans>

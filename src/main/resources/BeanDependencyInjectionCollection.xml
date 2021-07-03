@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Spring 依赖注入（Dependency Injection，DI）和控制反转含义相同，它们是从两个角度描述的同一个概念。使用依赖注入可以更轻松的管理和测试应用程序。-->
+<!--如果需要传递类似于 Java Collection 类型的值，例如 List、Set、Map 和 properties，可以使用 Spring 提供的集合配置标签，如下表所示。-->
+        <!--标签	说明-->
+<!--<list>	用于注入 list 类型的值，允许重复-->
+<!--<set>	用于注入 set 类型的值，不允许重复-->
+<!--<map>	用于注入 key-value 的集合，其中 key-value 可以是任意类型-->
+<!--<props>	用于注入 key-value 的集合，其中 key-value 都是字符串类型-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="init"
+       default-destroy-method="destroy">
+
+    <bean id="collection" class="BeanDependencyInjectionCollection.Collection">
+        <property name="manList">
+            <list>
+                <value>manList1</value>
+                <value>manList2</value>
+                <value>manList3</value>
+                <value>manList4</value>
+            </list>
+        </property>
+
+        <property name="manSet">
+            <set>
+                <value>manSet1</value>
+                <value>manSet2</value>
+                <value>manSet3</value>
+                <value>manSet4</value>
+            </set>
+        </property>
+
+        <property name="manMap">
+            <map>
+                <entry key="1" value="manMap1" />
+                <entry key="2" value="manMap2" />
+                <entry key="3" value="manMap3" />
+                <entry key="4" value="manMap4" />
+            </map>
+        </property>
+
+        <property name="manProp">
+            <props>
+                <prop key="manProp1">manProp1</prop>
+                <prop key="manProp2">manProp2</prop>
+                <prop key="manProp3">manProp3</prop>
+                <prop key="manProp4">manProp4</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--注入Bean引用-->
+    <bean id="mapList2" class="BeanDependencyInjectionCollection.Man">
+        <property name="name">
+            <value>1111</value>
+        </property>
+    </bean>
+    <bean id="collection2" class="BeanDependencyInjectionCollection.Collection">
+        <property name="manList">
+            <list>
+                <ref bean="mapList2"></ref>
+                <value>manList4</value>
+            </list>
+        </property>
+    </bean>
+</beans>

@@ -16,7 +16,7 @@ public class TestInherit {
         obj2.getMessage1();
         obj2.getMessage2();
         obj2.getMessage3();
-        System.out.println(); 
+        System.out.println();
 
         HelloChina obj3 = (HelloChina)context.getBean("helloChina2");
         obj3.getMessage1();
