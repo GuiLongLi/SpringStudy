@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Spring Bean自动装配-->
+<!--Bean 的装配可以理解为依赖关系注入，Bean 的装配方式也就是 Bean 的依赖注入方式。Spring 容器支持多种装配 Bean 的方式，如基于 XML 的 Bean 装配、基于 Annotation 的 Bean 装配和自动装配等。-->
+<!--Spring 基于 XML 的装配通常采用两种实现方式，即我们在《Spring依赖注入》一节介绍的 setter 注入和构造注入。本节介绍如何配置自动装配。-->
+<!--自动装配就是指 Spring 容器在不使用 <constructor-arg> 和<property> 标签的情况下，可以自动装配（autowire）相互协作的 Bean 之间的关联关系，将一个 Bean 注入其他 Bean 的 Property 中。-->
+<!--使用自动装配需要配置 <bean> 元素的 autowire 属性-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="init"
+       default-destroy-method="destroy">
+
+    <!--1）不使用自动装配（autowire="no"）-->
+    <!--autowire="no" 表示不使用自动装配，需要手动注入，Bean 依赖通过 ref 元素定义，Beans.xml 配置文件如下。-->
+    <bean id="man1" class="BeanAutoWire.Man" >
+       <constructor-arg value="不使用自动装配" />
+       <constructor-arg value="12" type="int" />
+    </bean>
+    <bean id="person1" class="BeanAutoWire.Person" autowire="no">
+        <constructor-arg ref="man1" type="BeanAutoWire.Man" />
+    </bean>
+
+    <!--2）按名称自动装配（autowire="byName"）-->
+    <!--autowire="byName" 表示按属性名称自动装配，XML 文件中 Bean 的 id 必须与类中的属性名称相同。配置文件内容修改如下。-->
+    <bean id="man" class="BeanAutoWire.Man" >
+        <constructor-arg name="name" value="按名称自动装配" />
+        <constructor-arg name="age" value="12" type="int" />
+    </bean>
+    <bean id="person" class="BeanAutoWire.Person" autowire="byName">
+    </bean>
+
+    <!--3）按类型自动装配（autowire="byType"）-->
+    <!--XML 文件中 Bean 的 id 与类中的属性名称可以不同，但必须只有一个类型的 Bean。配置文件内容修改如下。-->
+    <bean id="man3" class="BeanAutoWire.Man3" >
+        <constructor-arg name="name" value="按类型自动装配" />
+        <constructor-arg name="age" value="12" type="int" />
+    </bean>
+    <bean id="person3" class="BeanAutoWire.Person3" autowire="byType">
+    </bean>
+
+    <!--4）构造函数自动装配（autowire="constructor"）-->
+    <!--修改 Person 类的代码。-->
+    <bean id="man4" class="BeanAutoWire.Man4" >
+        <constructor-arg name="name" value="构造函数自动装配" />
+        <constructor-arg name="age" value="12" type="int" />
+    </bean>
+    <bean id="person4" class="BeanAutoWire.Person4" autowire="constructor">
+    </bean>
+</beans>
