@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--如果多个 Bean 需要使用相同的初始化或者销毁方法，不用为每个 bean 声明初始化和销毁方法，可以使用 default-init-method 和 default-destroy-method 属性，如下所示。-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="init"
+       default-destroy-method="destroy">
+    <!--把testDao对象的创建权交给Spring-->
+    <bean id="testDao" class="dao.TestDaoImpl"></bean>
+    <!--由Spring容器创建该类的实例对象-->
+    <bean id="personDao" class="dao.PersonDaoImpl"></bean>
+    <bean id="personService" class="dao.PersonServiceImpl">
+        <!-- 将personDao实例注入personService实例中 -->
+        <property name="personDao" ref="personDao"/>
+    </bean>
+
+    <!--实例化bean方法：-->
+    <!--Spring 官方提供了 3 种方法实现初始化回调和销毁回调：1、实现 InitializingBean 和 DisposableBean 接口；2、在 XML 中配置 init-method 和 destory-method；3、使用 @PostConstruct 和 @PreDestory 注解。-->
+    <!--构造器实例化bean-->
+    <bean id="person1" class="dao.Person1" init-method="init" destroy-method="destroy">
+        <property name="message" value="Hello World！" />
+    </bean>
+    <!--静态工厂实例化bean-->
+    <bean id="person2" class="factory.MyBeanFactory" factory-method="createBean"></bean>
+    <!--实例化工厂-->
+    <bean id="myBeanFactory2" class="factory.MyBeanFactory2"></bean>
+    <!--factory-bean属性指定一个实例工厂，factory-method属性确定使用工厂中的哪个方法-->
+    <bean id="person3" factory-bean="myBeanFactory2" factory-method="createBean"></bean>
+</beans>

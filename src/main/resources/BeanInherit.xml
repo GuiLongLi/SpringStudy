@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--BeanPostProcessor 接口也被称为后置处理器，通过该接口可以自定义调用初始化前后执行的操作方法。-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="init"
+       default-destroy-method="destroy">
+
+    <bean id="helloWorld" class="BeanInherit.HelloWorld">
+       <property name="message1" value="Hello World1!" />
+       <property name="message2" value="Hello World2!" />
+    </bean>
+    <bean id="helloChina" class="BeanInherit.HelloChina"
+        parent="helloWorld">
+        <property name="message1" value="Hello China1!" />
+        <property name="message3" value="Hello China3!" />
+    </bean>
+
+    <!--Bean定义模板：您可以创建一个 Bean 定义模板，该模板只能被继承，不能被实例化。创建 Bean 定义模板时，不用指定 class 属性，而是指定 abstarct="true" 将该 Bean 定义为抽象 Bean，如下所示。-->
+    <bean id="beanTemplate" abstract="true">
+        <property name="message1" value="Hello World1!" />
+        <property name="message2" value="Hello World2!" />
+        <property name="message3" value="Hello World3!" />
+    </bean>
+    <bean id="helloChina2" class="BeanInherit.HelloChina"
+          parent="beanTemplate">
+        <property name="message1" value="Hello China1!" />
+        <property name="message3" value="Hello China3!" />
+    </bean>
+</beans>

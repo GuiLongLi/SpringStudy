@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--BeanPostProcessor 接口也被称为后置处理器，通过该接口可以自定义调用初始化前后执行的操作方法。-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="init"
+       default-destroy-method="destroy">
+
+    <bean id="helloWorld" class="BeanPostProcessor.HelloWorld"
+        init-method="init" destroy-method="destroy"
+    >
+       <property name="message" value="Hello World!" />
+    </bean>
+    <!--注册处理器-->
+    <bean class="BeanPostProcessor.InitHelloWorld"></bean>
+    <bean class="BeanPostProcessor.InitHelloWorld2"></bean>
+</beans>
