@@ -51,15 +51,27 @@
     </bean>
 
     <!--注入Bean引用-->
-    <bean id="mapList2" class="BeanDependencyInjectionCollection.Man">
+    <bean id="mapList1" class="BeanDependencyInjectionCollection.Man">
         <property name="name">
             <value>1111</value>
+        </property>
+    </bean>
+    <bean id="mapList2" class="BeanDependencyInjectionCollection.Man">
+        <property name="name">
+            <value></value>
+        </property>
+    </bean>
+    <bean id="mapList3" class="BeanDependencyInjectionCollection.Man">
+        <property name="name">
+            <null/>
         </property>
     </bean>
     <bean id="collection2" class="BeanDependencyInjectionCollection.Collection">
         <property name="manList">
             <list>
+                <ref bean="mapList1"></ref>
                 <ref bean="mapList2"></ref>
+                <ref bean="mapList3"></ref>
                 <value>manList4</value>
             </list>
         </property>
