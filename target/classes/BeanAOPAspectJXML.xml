@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Spring AOP：基于AspectJ XML开发-->
+<!--基于 XML 的声明式是指通过 Spring 配置文件的方式来定义切面、切入点及通知，而所有的切面和通知都必须定义在 <aop:config> 元素中。-->
+<!--在使用 <aop:config> 元素之前，我们需要先导入 Spring aop 命名空间，如下所示。-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+
+    <bean id="man" class="AOPAspectJXML.Man">
+       <property name="name" value="Hello World!" />
+       <property name="age" value="123" />
+    </bean>
+    <bean id="logging" class="AOPAspectJXML.Logging">
+    </bean>
+
+
+    <aop:config>
+        <!--定义切面<aop:aspect>-->
+        <!--在 Spring 配置文件中，使用 <aop:aspect> 元素定义切面，该元素可以将定义好的 Bean 转换为切面 Bean，所以使用 <aop:aspect> 之前需要先定义一个普通的 Spring Bean。-->
+        <aop:aspect id="log" ref="logging">
+            <!--定义切入点<aop:pointcut>-->
+            <!--<aop:pointcut> 用来定义一个切入点，当 <aop:pointcut>元素作为 <aop:config> 元素的子元素定义时，表示该切入点是全局切入点，它可被多个切面所共享；当 <aop:pointcut> 元素作为 <aop:aspect> 元素的子元素时，表示该切入点只对当前切面有效。-->
+            <aop:pointcut id="selectAll"
+            expression="execution(* AOPAspectJXML.*.*(..))" />
+            <!--配置"前置通知"-->
+            <aop:before pointcut-ref="selectAll" method="beforeAdvice" />
+            <!--配置"后置通知"（无返回值）-->
+            <aop:after pointcut-ref="selectAll" method="afterAdvice" />
+            <!--配置"后置通知"（有返回值）-->
+            <aop:after-returning pointcut-ref="selectAll" returning="retVal" method="afterReturningAdvice" />
+            <!--配置"异常通知"-->
+            <aop:after-throwing pointcut-ref="selectAll" throwing="ex" method="afterThrowingAdvice" />
+        </aop:aspect>
+    </aop:config>
+</beans>

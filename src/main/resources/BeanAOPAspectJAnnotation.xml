@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Spring AOP：基于AspectJ注解开发-->
+<!--在 Spring 中，尽管使用 XML 配置文件可以实现 AOP 开发，但是如果所有的相关配置都集中在配置文件中，势必会导致 XML 配置文件过于臃肿，从而给维护和升级带来一定的困难。-->
+<!--为此，AspectJ 框架为 AOP 开发提供了一套注解。AspectJ 允许使用注解定义切面、切入点和增强处理，Spring 框架可以根据这些注解生成 AOP 代理。-->
+<!--
+关于注解的介绍如表 1 所示。
+表 1 Annotation 注解介绍
+    名称	说明
+    @Aspect	用于定义一个切面。
+    @Pointcut	用于定义一个切入点。
+    @Before	用于定义前置通知，相当于 BeforeAdvice。
+    @AfterReturning	用于定义后置通知，相当于 AfterReturningAdvice。
+    @Around	用于定义环绕通知，相当于MethodInterceptor。
+    @AfterThrowing	用于定义抛出通知，相当于ThrowAdvice。
+    @After	用于定义最终final通知，不管是否异常，该通知都会执行。
+    @DeclareParents	用于定义引介通知，相当于IntroductionInterceptor（不要求掌握）。
+
+启用 @AspectJ 注解有以下两种方法：
+1）使用@Configuration和@EnableAspectJAutoProxy注解
+    @Configuration
+    @EnableAspectJAutoProxy
+    public class Appconfig {
+    }
+2）基于XML配置
+在 XML 文件中添加以下内容启用 @AspectJ。
+    <aop:aspectj-autoproxy>
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+
+    <bean id="man" class="AOPAspectJAnnotation.Man">
+       <property name="name" value="Hello World!" />
+       <property name="age" value="123" />
+    </bean>
+    <bean id="logging" class="AOPAspectJAnnotation.Logging">
+    </bean>
+
+    <aop:aspectj-autoproxy />
+</beans>

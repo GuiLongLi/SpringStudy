@@ -1,4 +1,4 @@
-package AOPInvocation;
+package AOPJDK;
 
 public class UserManagerImpl implements UserManager{
     @Override

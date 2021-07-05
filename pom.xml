@@ -65,6 +65,30 @@
       <version>RELEASE</version>
       <scope>compile</scope>
     </dependency>
+    <!--AOP切面 基于AspectJ - 开始-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aspects</artifactId>
+      <version>5.2.7.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjtools</artifactId>
+      <version>1.8.14</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.8.14</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/aspectj/aspectjrt -->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjrt</artifactId>
+      <version>1.8.14</version>
+    </dependency>
+    <!--AOP切面 基于AspectJ - 结束-->
 
   </dependencies>
   <build>

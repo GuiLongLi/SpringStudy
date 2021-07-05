@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a97e55ba-86c3-475b-a588-c33fc2aef3df" name="Default Changelist" comment="" />
+    <list default="true" id="a97e55ba-86c3-475b-a588-c33fc2aef3df" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AOPInvocation/JdkProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AOPJDK/JdkProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AOPInvocation/MyAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AOPJDK/MyAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AOPInvocation/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AOPJDK/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AOPInvocation/UserManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AOPJDK/UserManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AOPInvocation/JdkProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AOPInvocation/MyAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AOPInvocation/UserManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AOPInvocation/UserManagerImpl.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,47 +30,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/AOPCGLlB/UserManager.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/AOPAspectJAnnotation/Logging.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/AOPCGLlB/UserManagerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/AOPCGLlB/MyAspect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state relative-caret-position="380">
+              <caret line="35" column="47" lean-forward="true" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
               <folding>
-                <element signature="e#69#70#0" expanded="true" />
-                <element signature="e#105#106#0" expanded="true" />
-                <element signature="e#140#141#0" expanded="true" />
-                <element signature="e#176#177#0" expanded="true" />
+                <element signature="e#413#414#0" expanded="true" />
+                <element signature="e#449#450#0" expanded="true" />
+                <element signature="e#574#575#0" expanded="true" />
+                <element signature="e#610#611#0" expanded="true" />
+                <element signature="e#625#626#0" expanded="true" />
+                <element signature="e#661#662#0" expanded="true" />
+                <element signature="e#845#846#0" expanded="true" />
+                <element signature="e#881#882#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/AOPAspectJAnnotation/Man.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+              <folding>
+                <element signature="e#152#153#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/AOPCGLlB/CglibProxy.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/AOPAspectJAnnotation/TestAspectJAnnotation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+            <state relative-caret-position="209">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1232#1233#0" expanded="true" />
-                <element signature="e#1291#1292#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/AOPAspectJXML/TestAspectJXML.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,21 +94,18 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>throwing</find>
+      <find>aspects</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/factory/MyBeanFactory3.java" />
-        <option value="$PROJECT_DIR$/src/main/test/InstanceTest3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/InitBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/Person1.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/BeanPostProcessor/HelloWorld.java" />
-        <option value="$PROJECT_DIR$/src/main/java/BeanPostProcessor/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/test/InstanceTest1.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/BeanPostProcessor.xml" />
         <option value="$PROJECT_DIR$/src/main/java/BeanPostProcessor/InitHelloWorld.java" />
         <option value="$PROJECT_DIR$/src/main/java/BeanPostProcessor/InitHelloWorld2.java" />
         <option value="$PROJECT_DIR$/src/main/java/BeanPostProcessor/TestPostProcessor.java" />
@@ -132,6 +148,15 @@
         <option value="$PROJECT_DIR$/src/main/java/AOPCGLlB/UserManagerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/AOPCGLlB/MyAspect.java" />
         <option value="$PROJECT_DIR$/src/main/java/AOPCGLlB/CglibProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AOPAspectJXML/Logging.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AOPAspectJXML/Man.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/AOPAspectJAnnotation/Logging.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AOPAspectJAnnotation/Man.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/BeanAOPAspectJAnnotation.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/BeanAOPAspectJXML.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/AOPAspectJXML/TestAspectJXML.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AOPAspectJAnnotation/TestAspectJAnnotation.java" />
       </list>
     </option>
   </component>
@@ -192,7 +217,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="AOPCGLlB" type="462c0819:PsiDirectoryNode" />
+              <item name="AOPAspectJAnnotation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testSpring2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testSpring2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="AOPAspectJXML" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testSpring2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testSpring2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="BeanDependencyInjectionCollection" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testSpring2" type="b2602c69:ProjectViewProjectNode" />
@@ -227,30 +268,32 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625305675924" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1625468635948" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\project\idea_project\testSpring2\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="AOPAspectJAnnotation" />
+      <recent name="BeanAutoWire" />
+      <recent name="BeanPostProcessor" />
+      <recent name="dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\project\idea_project\testSpring2\src\main\resources" />
       <recent name="D:\project\idea_project\testSpring2\src\main\java\BeanAutoWire" />
       <recent name="D:\project\idea_project\testSpring2\src\main\java\BeanDependencyInjectionCollection" />
       <recent name="D:\project\idea_project\testSpring2\src\main\java\BeanPostProcessor" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="BeanAutoWire" />
-      <recent name="BeanPostProcessor" />
-      <recent name="dao" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\project\idea_project\testSpring2\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -265,7 +308,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CglibProxy">
+  <component name="RunManager" selected="Application.TestAspectJAnnotation">
     <configuration name="CglibProxy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AOPCGLlB.CglibProxy" />
       <module name="testSpring2" />
@@ -280,11 +323,11 @@
       </method>
     </configuration>
     <configuration name="JdkProxy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AOPInvocation.JdkProxy" />
+      <option name="MAIN_CLASS_NAME" value="AOPJDK.JdkProxy" />
       <module name="testSpring2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AOPInvocation.*" />
+          <option name="PATTERN" value="AOPJDK.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -305,12 +348,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAutoWire" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BeanAutoWire.TestAutoWire" />
+    <configuration name="TestAspectJAnnotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AOPAspectJAnnotation.TestAspectJAnnotation" />
       <module name="testSpring2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BeanAutoWire.*" />
+          <option name="PATTERN" value="AOPAspectJAnnotation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -318,12 +361,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDependencyInjectionCollection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BeanDependencyInjectionCollection.TestDependencyInjectionCollection" />
+    <configuration name="TestAspectJXML" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AOPAspectJXML.TestAspectJXML" />
       <module name="testSpring2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="BeanDependencyInjectionCollection.*" />
+          <option name="PATTERN" value="AOPAspectJXML.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -333,11 +376,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestAspectJAnnotation" />
+        <item itemvalue="Application.TestAspectJXML" />
         <item itemvalue="Application.CglibProxy" />
         <item itemvalue="Application.JdkProxy" />
         <item itemvalue="Application.TestAnnotation" />
-        <item itemvalue="Application.TestAutoWire" />
-        <item itemvalue="Application.TestDependencyInjectionCollection" />
       </list>
     </recent_temporary>
   </component>
@@ -353,7 +396,8 @@
       <updated>1625105059068</updated>
       <workItem from="1625105061795" duration="9064000" />
       <workItem from="1625206958014" duration="7350000" />
-      <workItem from="1625275644324" duration="13744000" />
+      <workItem from="1625275644324" duration="13875000" />
+      <workItem from="1625448094155" duration="8312000" />
     </task>
     <servers />
   </component>
@@ -390,13 +434,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30158000" />
+    <option name="totallyTimeSpent" value="38601000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33102345" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18496802" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -406,8 +450,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25813448" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27765727" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -435,138 +479,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/BeanPostProcessor/InitHelloWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="67" lean-forward="true" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/FirstTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BeanPostProcessor/HelloWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <element signature="e#126#127#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
-            <element signature="e#198#199#0" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BeanPostProcessor/TestPostProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BeanPostProcessor/InitHelloWorld2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BeanInherit/HelloChina.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BeanInherit/TestInherit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BeanInherit/HelloWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/BeanInherit.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/BeanPostProcessor.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="57" lean-forward="true" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BeanDependencyInjection/Man.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#115#116#0" expanded="true" />
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BeanDependencyInjection/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="e#97#98#0" expanded="true" />
-            <element signature="e#150#151#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/BeanDependencyInjection/TestDependencyInjection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -584,9 +496,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BeanDependencyInjectionCollection/Person.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BeanDependencyInjectionCollection/Person.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/BeanDependencyInjectionCollection/Collection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -605,19 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BeanDependencyInjectionCollection/Man.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
-          <folding>
-            <element signature="e#125#126#0" expanded="true" />
-            <element signature="e#175#176#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/BeanDependencyInjectionCollection/TestDependencyInjectionCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -625,13 +522,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BeanAutoWire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BeanAutoWire.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/BeanDependencyInjectionCollection.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -639,9 +530,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BeanAutoWire/TestDependencyInjection.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BeanAutoWire/TestDependencyInjection.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/BeanAutoWire/Man3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -759,13 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BeanAnnotation/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="45" lean-forward="true" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/BeanAnnotation.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -807,10 +689,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AOPInvocation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/AOPInvocation.java" />
+    <entry file="jar://D:/maven/maven_respository/org/springframework/spring-core/5.0.2.RELEASE/spring-core-5.0.2.RELEASE.jar!/org/springframework/cglib/proxy/Proxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="53" column="99" selection-start-line="53" selection-start-column="82" selection-end-line="53" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AOPCGLlB/UserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AOPCGLlB/UserManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AOPCGLlB/CglibProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1232#1233#0" expanded="true" />
+            <element signature="e#1306#1307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AOPJDK/UserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AOPJDK/UserManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AOPJDK/MyAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#74#75#0" expanded="true" />
+            <element signature="e#118#119#0" expanded="true" />
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AOPCGLlB/MyAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <element signature="e#69#70#0" expanded="true" />
+            <element signature="e#113#114#0" expanded="true" />
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#184#185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AOPAspectJXML.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AOPJDK/JdkProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BeanAnnotation/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="45" lean-forward="true" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -820,93 +793,141 @@
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AOPInvocation/UserManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/BeanInherit/TestInherit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven/maven_respository/org/springframework/spring-core/5.0.2.RELEASE/spring-core-5.0.2.RELEASE.jar!/org/springframework/cglib/proxy/Proxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="53" column="99" selection-start-line="53" selection-start-column="82" selection-end-line="53" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AOPInvocation/MyAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="437">
+          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding>
-            <element signature="e#74#75#0" expanded="true" />
-            <element signature="e#110#111#0" expanded="true" />
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#181#182#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AOPInvocation/UserManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AOPInvocation/JdkProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/BeanInherit/HelloWorld.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BeanDependencyInjectionCollection/Man.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+          <folding>
+            <element signature="e#125#126#0" expanded="true" />
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="73" column="16" lean-forward="true" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AOPAspectJXML/Logging.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding>
+            <element signature="e#102#103#0" expanded="true" />
+            <element signature="e#138#139#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AOPAspectJXML/Man.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding>
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/BeanAOPAspectJXML.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/BeanAOPAspectJAnnotation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AOPAspectJAnnotation/Logging.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="35" column="47" lean-forward="true" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+          <folding>
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#610#611#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AOPAspectJAnnotation/Man.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding>
+            <element signature="e#152#153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/AOPAspectJXML/TestAspectJXML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AOPCGLlB/UserManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/AOPAspectJAnnotation/TestAspectJAnnotation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AOPCGLlB/UserManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AOPCGLlB/MyAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="e#69#70#0" expanded="true" />
-            <element signature="e#105#106#0" expanded="true" />
-            <element signature="e#140#141#0" expanded="true" />
-            <element signature="e#176#177#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AOPCGLlB/CglibProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
           </folding>
         </state>
       </provider>
